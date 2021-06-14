@@ -1,0 +1,25 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=18;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Stegotherium_tauberi   200?0?0000???????1
+Anadasypus_hondanus    ??????????00010110
+Dasypus_punctatus      20121011??10111121
+Dasypus_hybridus       010100001110111111
+Dasypus_kappleri       211021111110111?11
+Dasypus_novemcinctus   111121001110111111
+Dasypus_septemcinctus  0101??0021?0?1???1
+Propraopus_grandis     30??10000001000000
+Propraopus_sulcatus    ??????????01000010
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 2-3 6-8 10-16 18, ord: 1 4-5 9 17;
+END;

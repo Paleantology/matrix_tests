@@ -1,0 +1,21 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=4 NCHAR=18;
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6" MISSING=? GAP=- ;
+
+MATRIX
+
+Hypothetical_ancestor  000000000000000000
+Parahyaena_brunnea     401111111200001010
+Hyaena_hyaena          300020010000000001
+Crocuta_crocuta        611020000011111111
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;
+

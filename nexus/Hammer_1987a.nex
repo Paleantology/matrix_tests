@@ -1,0 +1,27 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=12 NCHAR=15;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Ancestor          000000000000000
+Aphaneramma       020200100000000
+Lyrocephalus      201200100000000
+Tertrema          111200112000000
+Platystega        110200?10000000
+Trematosaurus     112000100001100
+Trematosuchus     113000100100000
+Stoschiosaurus    0202010?000??00
+Halobatrachus     02?210??0010?00
+Wantzosaurus      0203010?100?000
+Erythrobatrachus  02?210???0???10
+Inflectosaurus    11???0?0?????01
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;

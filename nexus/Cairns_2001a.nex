@@ -1,0 +1,59 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=31 NCHAR=10;
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7" MISSING=? GAP=- ;
+
+MATRIX
+
+Discocyathus                 0000000000
+Areopsarmmia                 1000?1000?
+Palaeopsarmmia               (13)00000001?
+Balanophyllia_Balanophyllia  3001100111
+Balanophyllia_Eupsammia      3000100111
+Lamellophyllia               300001012?
+Heteropsammia                200041011(12)
+Wadeopsammia                 300021013?
+Calostylopsis                300001021?
+Bathypsammia                 3001400011
+Pourtalopsammia              3001300041
+Trochopsammia                3001000041
+Endopsammia                  3001001011
+Leptopsammia                 3001101011
+Thecopsammia                 3001300161
+Endopachys                   4002110111
+Notophyllia                  4002100011
+Eguchipsammia                5410101111
+Rhizopsammia                 5111000111
+Cladopsammia                 5211001101
+Paleoastroides               551140116?
+Astroides                    5511101011
+Tubastraea                   5511011011
+Turbinaria                   5511411012
+Dendrophyllia                53111111(01)1
+Enallopsammia                5311110001
+Duncanopsammia               5311410152
+Dichopsammia                 5321011172
+Lobopsammia                  532100017?
+Stichopsammia                562101017?
+Reussopsammia                562101004?
+;
+END;
+
+BEGIN ASSUMPTIONS;
+ 	USERTYPE 'step_A' (STEPMATRIX) = 7
+	0 1 2 3 4 5 6
+	. 1 2 1 1 2 1
+	1 . 1 2 2 1 2
+	2 1 . 3 3 2 3
+	1 2 3 . 2 3 2
+	1 2 3 2 . 3 2
+	2 1 2 3 3 . 3
+	1 2 3 2 2 3 .
+	;
+ 	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1 3 5-10, step_A: 2, ord: 4; 
+END;
+

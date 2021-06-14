@@ -1,0 +1,26 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=10;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+
+MATRIX
+
+Dryomys_nitedula               1111122110
+Eliomys_assimilis              2001122100
+Eliomys_reductus               2100120000
+Eliomys_lafarguei              1101010000
+Eliomys_truci                  0001110001
+Eliomys_yevesi                 0001122001
+Eliomys_intermedius            0001122002
+Eliomys_quercinus_quercinus    0100022002
+Eliomys_quercinus_lusitanicus  0001022002
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;
+

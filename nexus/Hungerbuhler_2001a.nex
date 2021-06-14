@@ -1,0 +1,27 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=12 NCHAR=6;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Proterosuchus        000000
+Proterochampsa       10110(01)
+Chanaresuchus        000002
+Euparkeria           001100
+Doswellia            11001?
+Erpetosuchus         00?001
+Ornithosuchus        111?01
+Phytosauria          221011
+Sphenosuchus         100001
+Saltoposuchus        011000
+Dibothrosuchus       000000
+Zanclodon_arenaceus  221100
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;

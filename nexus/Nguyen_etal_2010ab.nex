@@ -1,0 +1,26 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=9 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Anseranas_semipalmata   000000000
+Barawertornis_tedfordi  000000000
+Ilbandornis_lawsoni     110001110
+Genyornis_newtoni       101101220
+Bullockornis_sp         000201001
+Ilbandornis_woodburnei  000201001
+Bullockornis_planei     001311001
+Dromornis_stirtoni      001311011
+Dromornis_australis     0?0211001
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+ 	TYPESET * UNTITLED  = ord: 4 7-8, unord: 1-3 5-6 9;
+END;
+

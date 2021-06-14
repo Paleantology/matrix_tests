@@ -1,0 +1,23 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=6 NCHAR=19 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Ancestor                   00000000000000?0000
+Phosphatherium_escuilliei  1010010000100000000
+Daouitherium_rebouli       00?2100010010111011
+Numidotherium_koholense    21211101?0100211011
+Numidotherium_savagei      21231110001212111?1
+Baryhterium_grave          2123111001020211112
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+	WTSET * UNTITLED  = 1: 6 8 12-15, 2: 2-5 7 9-11 17 19, 3: 1 16 18;
+END;
+

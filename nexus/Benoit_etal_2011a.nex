@@ -1,0 +1,28 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=26 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Waipatia                           00300000000000000000000000
+Squalodon                          00000000000000000000000000
+Eoplatanista                       00000020020000000000020000
+Schizodelphis_sulcatus_MNHNRL_127  00?000?00???00?00000??????
+Schizodelphis_barnesi              00000000020200000000000001
+Ziphiodelphis                      00000000020200000000000001
+Xiphiacetus                        00000020000000000020000001
+Eurhinodelphis                     0002(01)020220(012)00000000000000
+Mycteriacetus                      00020020020000000??0000???
+Schizodelphis_sulcatus_PGN2        000?0000020000000000000001
+Schizodelphis_morckhoviensis       00000020020000000000000001
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+ 	TYPESET * UNTITLED  = ord: 7 9 25, unord: 1-6 8 10-24 26;
+END;
+

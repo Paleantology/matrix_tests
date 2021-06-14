@@ -1,0 +1,27 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=29;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+P_dolichodeirus_outgroup  00000000000000000000000000000
+P_brachypterygius         0101201000001000100??1?010000
+P_guilelmiimperatoris     0101200??0????00?00??1?011001
+Tricleidus                100111?110?000001000000111001
+Cryptoclidus              100111?1101?01110100000111012
+Occitanosaurus            011020110110100?1011110011000
+Microcleidus              0110201100?010001001110101001
+Muraenosaurus             010020111000?0001011110111001
+Alzadasaurus              01002001000110002021111011112
+Hydrotherosaurus          0110201111?1?0022021111?01112
+Thalassomedon             0100200??0???1110110000111011
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-18 20-28, ord: 19 29;
+END;

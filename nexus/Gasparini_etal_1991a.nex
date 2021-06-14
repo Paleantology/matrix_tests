@@ -1,0 +1,26 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=10 NCHAR=19;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Protosuchidae   0000000000000000000
+Notosuchus      0000000002000000000
+Lomasuchus      211111000111111000?
+Peirosaurus     211111001??11?10?0?
+Caririsuchus    21???210?1??????0??
+Araripesuchus   00000000000011?0000
+Baurusuchus     1100000010002100011
+Sebecus         1100002112112101?11
+Uruguaysuchus   00000000020010?0?00
+Trematochampsa  21??12120312?1011??
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-5 7 9-11 14-19, ord: 6 8 12-13;
+END;

@@ -1,0 +1,28 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=12 NCHAR=14;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Dilophosaurus     0000020110????
+Ceratosaurus      000002?00?????
+Majungasaurus     01101201001200
+Megalosaurus      001000000?0?10
+Torvosaurus       1010001000???0
+Condorraptor      01100102001?10
+Sinraptor         01111102011100
+Allosaurus        00111102001200
+Acrocanthosaurus  110000????????
+Mapusaurus        010100??0100?0
+Guanlong          01001????01200
+IVPP_V_18060      11111111111101
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-5 7-11 13-14, ord: 6 12;
+END;

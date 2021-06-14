@@ -1,0 +1,29 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=12 NCHAR=18 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Trimerorhachidae            00000000-000000?00
+Lydekkerina                 00000000-000100000
+Chomatobatrachus            00000000-000100001
+Rhytidosteus_capensis       1011111???11111121
+Peltostega_sp               1?111?11211011?1??
+Laidleria_gracilis          101111112110111110
+Indobrachyops_panchetensis  101100???110110?11
+Deltasaurus_kimberleyensis  101111112?11111?21
+Rewana_quadricuneata        11??111111???1?111
+Derwentia_warreni           1111?1112010110110
+Arcadia_myriadens           1111111111??0?0111
+Boreopelta_vavilovi         1?111?11211011?1?1
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+ 	TYPESET * UNTITLED  = ord: 9 17, unord: 1-8 10-16 18;
+END;
+

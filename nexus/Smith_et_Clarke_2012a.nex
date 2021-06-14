@@ -1,0 +1,38 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=20 NCHAR=28;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+
+MATRIX
+
+Corvus_moneduloides        001011000101000001000?11????
+Alca_torda                 1111101101110102121111111110
+Pinguinus_impennis         1111101101010112120111111110
+Alle_alle                  1111100101110102120111111100
+Uria_aalge                 1101100101110112120111111010
+Cepphus_columba            1111100101110102120111111000
+Brachyramphus_marmoratus   1111000111110112110011111100
+Synthliboramphus_antiquus  1111010101110102120111111100
+Aethia_cristatella         1111100001110102110011111100
+Fratercula_corniculata     1111100001110002110011101100
+Mancallinae_sp             1111101001010112120111?11110
+Stercorarius_longicaudus   1111010000111101021110110100
+Sterna_anaethetus          1111100000111101021100110100
+Rynchops_niger             1101101001011101010100010010
+Rissa_tridactyla           0101100000111101010100010100
+Larus_argentatus           1111100000111111010000110100
+Stiltia_isabella           0101020000111001000?00100100
+Charadrius_vociferus       1111020000101001000?00000101
+Halcyornis_toliapicus      1101100001111102020110111101
+Bubo_virginianus           100013000101110011000?010101
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-5 7-15 17 19-28, ord: 6 16 18;
+END;
+

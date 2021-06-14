@@ -1,0 +1,24 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=7 NCHAR=15 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Eotherapsids     1(01)1(01)1000000011(12)
+Eutherapsids     111(01)(012)(01)(01)(012)(01)(01)(01)(02)(02)(01)(12)
+Dinocephalians   111(01)1000000(02)(02)1(12)
+Dicynodonts      111(01)1001(01)010(02)(01)(12)
+Gorgonopsians    111(01)1(01)00(01)00(02)1(01)(12)
+Therocephalians  111(01)(012)(01)(01)(012)(01)(01)(01)(012)(02)0(12)
+Cynodonts        111(01)21(01)21110(02)0(12)
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+ 	TYPESET * UNTITLED  = ord: 1-15;
+END;
+

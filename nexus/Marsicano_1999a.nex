@@ -1,0 +1,23 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=7 NCHAR=19;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Trimerorhachidae  000000000?000000?00
+Brachyopidae      0001000100111011020
+Pelorocephalus    01001001111201?0212
+Siderops          010???0011120110200
+Keratobrachyops   0100000111120011103
+Kuttycephalus     11101111?11?11?????
+Compsocerops      11101111?11?1110001
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-11 13-19, ord: 12;
+END;

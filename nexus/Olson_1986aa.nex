@@ -1,0 +1,33 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=16 NCHAR=10 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Haptodus         0000020000
+Dimetrodon       0000020201
+Edaphosaurus     0100020011
+Phthinosuchus    2112211?22
+Phthinosaurus    ???????1??
+Eotitanops       2??1201?22
+Gorgodon         ?1????????
+Biarmosuchus     00?10?1121
+Archaeosyodon    1???112???
+Eosyodon         ??????2???
+Estemmenosuchus  22?2210?22
+Dimacrodon       ?2????????
+Otsheria         2212210122
+Gorgonopsian     2212212222
+Brithopodan      2222212222
+Dicynodont       2222200202
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+ 	TYPESET * UNTITLED  = ord: 1-10;
+END;
+
