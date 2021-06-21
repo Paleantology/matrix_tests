@@ -1,0 +1,25 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=13 NCHAR=11 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Outgroup                       01100000000
+Eosimias                       10111000111
+Tarsius                        10000010120
+Apidium                        10210100011
+Saimiri                        10210100111
+Anaptomorphinae                10111010110
+Omomyinae                      10111010110
+Notharctinae                   21122011000
+Adapinae                       21212111000
+Protoadapinae                  21??2?1?000
+Shanghuang_unnamedhaplorhines  10111010110
+Shanghuang_tarsiids            10101010???
+Shanghuang_protoanthropoid     102110?001?
+;
+END;
+

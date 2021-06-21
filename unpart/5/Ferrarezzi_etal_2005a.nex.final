@@ -1,0 +1,18 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=5 NCHAR=31;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+
+MATRIX
+
+Apostolepis_flavotorquata  000000000000001000000?10000?00?
+Apostolepis_dorbignyi      0101110000011?0??????????????00
+Apostolepis_assimilis      0101110001000110000100100000000
+Apostolepis_ammodites      1112231111100010110111211111211
+Apostolepis_cearensis      1112221001200021001022011010112
+;
+END;
+

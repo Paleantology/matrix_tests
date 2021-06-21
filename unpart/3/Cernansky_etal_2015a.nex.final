@@ -1,0 +1,23 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=10 NCHAR=30;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+
+MATRIX
+
+Hemitheconyx_caudicinctus  000?000001?0000010000000000000
+Ameiva_ameiva              000000000000000000100110001001
+Psammodromus_algirus       000000000000000000000110001000
+Rhineura_floridana         1011100001?0001001100000110112
+Blanus_cinereus            101110111001100101111111020002
+Bipes_biporus              101110111001100111111001020002
+Amphisbaena_alba           101110111011111111101002010002
+Trogonophis_wiegmanni      ?101110111?11111111010?2010002
+Cuvieribaena_carlgansi     10?210011001100101121111??????
+Vertebra_Le_Bretou         ????????????????????????020002
+;
+END;
+

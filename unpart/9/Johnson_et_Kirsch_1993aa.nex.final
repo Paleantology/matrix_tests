@@ -1,0 +1,62 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=50 NCHAR=30 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3 4 5" MISSING=? GAP=- ;
+MATRIX
+
+Hypothetical_ancestor      000000000000000000000000000000
+Ornithorhynchus_anatinus   0100000000000000000000000010?0
+Tachyglosseus_aculeatus    0100010000020000000000000010?0
+Didelphis_virginiana       100100100002000000001211000000
+Sminthopsis_murina         ?0010?100?000???00??12?1100001
+Isoodon_obesulus           ?0010?100?020???00??12?1000000
+Dasyurus_viverrinus        ?001001001020???00?012?1000000
+Pseudocheirus_peregrinus   100100101110000000001311100001
+Trichosurus_vulpecula      100100101111000000002311100001
+Vombatus_ursinus           ?00100101?02000000002211100001
+Macropus_eugenii           ?0010?101?02000000002311100001
+Lestoros_inca              ?0010?100?000???00??12?1000010
+Tamandua_tetradactyla      ?0312?110?023???00??22?1000000
+Myrmecophaga_tridactyla    ?0013?110?023???00??22?100?000
+Choloepus_hoffmanni        ?0013?110?0230?0000?2210001000
+Dasypus_novemcinctus       0000311100023000000?111100?0?0
+Oryctolagus_cuniculus      0031311100123010000010110000?0
+Elephantulus_rufescens     ?0313?110?002???00??10?10010?0
+Blarina_brevicauda         ?032311100002???00??21?0001010
+Scalopus_aquaticus         ?0323?110?002??0000?11?1001000
+Erinaceus_europaeus        003131110000200000001111000000
+Hemicentetes_hemispinosus  ?0313?110?002???00??11?1001100
+Tupaia_glis                003131110000300000022111110000
+Galago_senegalensis        ?03131110002300000032311100001
+Saimiri_sciureus           ?03131110002301100033311101001
+Aotus_trivirgatus          ?031311100023001000333?11010?1
+Macaca_mulatta             00?131110002301110033311101001
+Pan_troglodytes            ?0?131110002301?10034311101001
+Cynocephalus_volans        ?0313?110?123??000?212?1101001
+Myotis_lucifugus           ?0?13111000020?010104111000110
+Pteropus_giganteus         ?0?13111000220?010134111101001
+Cavia_porcellus            0031311100123000000011110000?0
+Dasyprocta_leporina        ?0313?110?023000000?121100?0?0
+Erethizon_dorsatum         ?0313?110?023000000?2011001100
+Castor_canadensis          ?0313?110?023000000?10?1000100
+Sciurus_carolinensis       ?031311100103000000011111000?1
+Rattus_norvegicus          003131110010300000001011000000
+Tursiops_truncatus         ?0?13?110?023???20??53??0011?0
+Trichechus_manatus         ?0?1311100023???11??40?0001000
+Equus_burchelli            0001311100023??0000023?1100001
+Sus_scrofa                 002131110002312000002311100001
+Tayassu_tajacu             ?0013?110?023??0000?23?1100001
+Lama_glama                 ?001311100023220000?2311101001
+Ovis_aries                 000131110002323000002311100001
+Canis_familiaris           0001311100023010000?1311100001
+Felis_catus                000131110002302000011311100001
+Procyon_lotor              ?001311100023020000?1311100001
+Callorhinus_ursinus        ?0013?110?0230?0000?33?1100001
+Phoca_vitulina             ?0?131110?023??0?0??43?1100001
+Procavia_capensis          ?0013?110?023000000?23?1101001
+;
+END;
+

@@ -1,0 +1,19 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=7 NCHAR=14 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Cymbospondylus    0000000??0000?
+Temnodontosaurus  0001200000000?
+Ichthyosaurus     11101000000100
+Stenopterygius    11101010000111
+Ophthalmosaurus   12101111111110
+Mollesaurus       0101?0111?0???
+Chacaicosaurus    101??0100001?1
+;
+END;
+

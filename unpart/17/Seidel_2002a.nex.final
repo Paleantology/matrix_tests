@@ -1,0 +1,40 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=27 NCHAR=23;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+
+MATRIX
+
+Outgroup                 12120110000000011010001
+Trachemys_elegans        13110102100102211101110
+Trachemys_scripta        13020102100102011101110
+Trachemys_gaigeae        11201100100010101101110
+Trachemys_taylori        01200102010010211101110
+Trachemys_hartwegi       11200100100010100101110
+Trachemys_yaquia         12200100110010111101110
+Trachemys_nebulosa       01101110101021100101110
+Trachemys_hiltoni        01101110001021100101110
+Trachemys_ornata         01200110110010111101110
+Trachemys_cataspila      01201101010010011101110
+Trachemys_venusta        11200011010010011101110
+Trachemys_grayi          12201012010010011101110
+Trachemys_emolli         01200011100010101101110
+Trachemys_callirostris   12100102010010200101110
+Trachemys_chichiriviche  02100112010010200101110
+Trachemys_dorbigni       12200102000010111101110
+Trachemys_decussata      02010010000010101101110
+Trachemys_terrapen       02210102000010101101110
+Trachemys_decorata       02211112000012001101110
+Trachemys_stejnegeri     02121102000110201101110
+Trachemys_vicina         02121102000010201101110
+Trachemys_malonei        02021102000010201101110
+Trachemys_angusta        02010010000010101101110
+Trachemys_troostii       13120102100112011101110
+Trachemys_brasiliensis   12200102000000111101110
+Trachemys_adiutrix       02200102100010111101110
+;
+END;
+

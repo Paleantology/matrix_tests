@@ -1,0 +1,19 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=7 NCHAR=11 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Aulopus          000{01}0000000
+Sardinioidinae   10010000000
+Neocassandrinae  11101110000
+Neoscopelinae    1110000{01}000
+Eomyctophinae    11100001110
+Myctophinae      111000022{01}1
+Lampanyctinae    111000022{01}1
+;
+END;
+

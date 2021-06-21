@@ -1,0 +1,20 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=8 NCHAR=14;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+OG1                 00000000000000
+Tristichopterus     000000??0?0100
+Eusthenopteron      00000000000101
+Jarvikina           01000100100???
+Platycephalichthys  ?111?100101???
+Eusthenodon         1111111?1111??
+Mandageria          11111111111112
+Cabonnichthys       01101111111112
+;
+END;
+

@@ -1,0 +1,41 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=28 NCHAR=22;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+
+MATRIX
+
+Basiliscus_vittatus       0000000000000000000100
+Iguana_iguana             000000?0?0000000000100
+Brookesia_sp              11?10110011011?210000?
+Trioceros_hoehnellii      11?10110011011?2100000
+Chamaeleo_dilepis         11?10110011011?210000?
+Leiolepis_belliana        00201000101001?2101101
+Uromastyx_aegyptia        202010101111001101010?
+Trapelus_sp               201110010110001210121?
+Agama_agama               2011100101100012101210
+Phrynocephalus_mystaceus  2011100101100012101210
+Laudakia_stellio          2011100101100012101210
+Draco_timoriensis         2011100101100012101100
+Calotes_versicolor        1011100101100011101200
+Bronchocela_cristatella   1011100101100011101200
+Pseudocalotes_sp          1011100101100011101200
+Japalura_splendida        1011100101100001101200
+Hydrosaurus_pustulatus    2001100100100001101101
+Physignathus_cocincinus   2011100101100001101210
+Physignathus_lesueurii    2011100101100001101210
+Hypsilurus_dilophus       2011100101100001101210
+Moloch_horridus           ?01?1001011001?2110100
+Pogona_barbata            2011100101100001101210
+Rankinia_diemensis        2011100101100001101210
+Amphibolurus_gilberti     2011100101100001101210
+Diporiphora_albilabris    20?1100101100001101210
+Ctenophorus_decresii      2011100101100001101210
+Tympanocryptis_lineata    2011100101100001101210
+Tikiguania_estesi         101110010110001110????
+;
+END;
+

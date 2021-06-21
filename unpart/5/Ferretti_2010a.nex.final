@@ -1,0 +1,24 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=24;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+
+MATRIX
+
+Gomphotherium_angustidens   000000000000000000000000
+Gomphotherium_productum     000000000000000010000000
+Megabelodon_lulli           00000000000000?1?0000000
+Eubelodon_morilli           00000000200002?1???01100
+Gnathabelodon_thorpei       00000000100012?1?0000000
+Sinomastodon_hanjiangensis  11000011211012?1?1?10000
+Stegomastodon_texanus       11110011200022?1?1122200
+Rynchotherium_cf_falconeri  011211012100101011101000
+Stegomastodon_platensis     1111111121111101?1212111
+Cuvieronius_hyodon          111211112111101111211111
+Haplomastodon_chimboraz     1111111121112201?1211111
+;
+END;
+

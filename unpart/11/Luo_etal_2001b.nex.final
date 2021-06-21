@@ -1,0 +1,27 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=15 NCHAR=90 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" a b c d e f g h i j" MISSING=? GAP=- ;
+MATRIX
+
+Probainognathus   aaaa??aa??aaabaaaaaaaaabbacabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?aaaaaaaaaaa?aaaa?aa
+Tritylodontids    aaaa??aaa?baaaaaaaaabbaaaaaaababaaaabaaaba(ab)aaaaaaaaaaaaabaaaaaaaaaaaaa?abbbccbacdcca?aa?dc
+Tritheledontids   aaaa??aba?aaaaaaaaaaaaaabaaabaaabaaabaabbaaaaaaaaabaaaabaaaaaaaaaaaaaa?aaaaaaaaaaa?aaaa?aa
+Adelobasileus     b???????ba??abbaaaaaaaabbccaaaaabaaabbb??a?b??bbbbaa????????????????????????aa?c??????????
+Sinoconodon       aaaaaaacbabaabbbaaaabaaaaaaaababbbbacbbbcabbaaaaaaaabaabaaaaaaaaaaaaabbaacaa(ab)aacaa?aaaa?bb
+Morganucodon      aabba(bc)acbbbaabbbbaaacbabbbaaabbbbbbaccbbcabbaabaabbaaabbaabaaaaaaaaaab(ab)bacbabababbaaaaa?cb
+Haldanodon        aabbbcabbabaabbbcaaacba????a?babbbcaccbccbccbab?bbbabaabbabaaaaaaaaaabbcacbababbbbaaaaa?ca
+Hadrocodium       aabababcbd??abbbbaaacbbbbcbaaaabbbbbccbccbccbbbbccbccc?c?abbbbb?baaa?bacac?abab?cbaaaaa??b
+Triconodontids    aabbab?cbcba(ab)bbbcaaacbabbbabbbbcbbcbccbccbc(bc)bbbbbbbbcbabbb???bbbbbbb?cc(bc)acb(ab)bababbaaaaa?ca
+Ornithorhynchus   aabaabacbccabcbbaaaacbabbcbabbbabbbbccaccbccbbbaccbccc?cbb???bbbbbcbbcbca(ab)?cccab???b?????c
+Multituberculate  aabbab(ab)cbbbab(bc)bbd(ab)a(ab)cbbbbcbbb(ab)(ab)c(ab)(ab)cbccbaca(bc)cbbbc(bc)cb(bc)cc?bbb???bb(ab)bbcbbccbbbb(bc)bbacdcca?aa?c(bc)
+Zhangheotherium   ??bbbcbcbcb?bbb??bbbcab??ccabaacb???ccb?c????a??????cbacbb???bbaabba?cccadbbbcaaccbbbaaaca
+Vincelestes       bbbabcbbbddbabbbcbbbcabbbcbb(ab)abcbccbccbbcabbbabcaabbcbabbaabbbbabbbb?cbcad?abcacccbbbaba?a
+Metatherians      bbbbbcbcbddb(ab)bcb(ad)bbbcabc??d?baacbcdbccbccbb(bc)(ab)ab?aab(bc)cc?bba(ab)cbbbbbbc(ab)bbbcadbabcacccbbbbbbca
+Eutherians        bbb(ab)bcbcbddb(ab)(ab)cb(ad)bbbcabc??(bc)bbaacbcdbccb(bc)cbb(bc)(ab)abcaab(bc)c(bc)bbba(ab)cbbb(ab)bb(ab)(ab)bbbcadbabcacccbbbbbbca
+;
+END;
+

@@ -1,0 +1,21 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=17 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Outgroup                   00000000000000000
+Proticia_venezuelensis     10?1100?010000?00
+Colombitherium_tolimense   10??100?020000?00
+Carolozittelia_tapiroides  210?00120?0001001
+Propyrotherium_saxeum      20?1111?0?0102001
+Gryphodon_peruvianus       20??0?1?0?1102?10
+Baguatherium_jaureguii     2011?2110?11?211?
+Pyrotherium_macfaddeni     20111221121112011
+Pyrotherium_romeroi        20111221121112011
+;
+END;
+

@@ -1,0 +1,20 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=8 NCHAR=7 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Ivesheadia          32--1?0
+Charniodiscus       1300011
+Charnia_masoni      1200011
+Charnia_wardi       1201011
+Charnia_antecedens  1211011
+Beothukis           1211111
+Bradgatia           1211100
+Fractofusus         22--101
+;
+END;
+

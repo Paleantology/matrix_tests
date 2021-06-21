@@ -1,0 +1,32 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=19 NCHAR=20;
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6" MISSING=? GAP=- ;
+
+MATRIX
+
+Hypothetical_ancestor        00000000000000000000
+Hyaenictitherium_hyaenoides  12001110000001000100
+Lycyaena_dubia               030011100000010?01?0
+Ictihtherium_viverrinum      00001100100001000100
+Leecyaena_lycyaenoides       1210211001010??0?1??
+Chasmaporthetes_lunensis     13211110001001?001?1
+Chasmaporthetes_borissiaki   1311101000100100?1?0
+Palinhyaena_reperta          1200110010100110?10?
+Ikelohyaena_abronia          120011001001011001?0
+Adcrocuta_eximia             14112111011100111111
+Pliocrocuta_perrieri         14101111010201111111
+Pachycrocuta_brevirostris    14111111010201111111
+Tungurictis_spocki           ?0??00000000000?01?0
+Belbus_beaumonti             120011001111011??1?0
+Plioviverrops_orbignyi       ?00000000001100??1?0
+Parahyaena_brunnea           14101111110101100101
+Hyaena_hyaena                13101101110200100101
+Crocuta_crocuta              16211111110200111111
+Hyaenotherium_wongii         11001110000001000100
+;
+END;
+

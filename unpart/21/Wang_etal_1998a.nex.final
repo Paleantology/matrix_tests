@@ -1,0 +1,21 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=20 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Morganucodon                  000000000000000000?0
+Kuehneotherium                00111000001000000000
+Spalacotherium_is_Peralestes  10112000001000000000
+Amphitherium                  111131011110????????
+Paurodon_is_Euthlastus        1?213101000010000211
+Dryolestes_is_Herpetairus     11113101000010000211
+Shuotherium                   0?113000001110101100
+Peramus                       11113112111011000010
+Tribosphenida                 11113112111011010011
+;
+END;
+

@@ -1,0 +1,22 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=10 NCHAR=32 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Outgroup                      00000100000000?00000??00?????0?0
+Daubentonia_madagascariensis  00-0-20-000??0300000000010020?00
+Hapalemur_griseus             10011000021210211012210101011110
+Hapalemur_simus               ?001?110021?103??0??2?11??0????0
+Lemur_catta                   11001110020110011000010101001120
+Lemur_fulvus                  11100121110001120001200001000021
+Varecia_variegata             11100011220100120002211011100000
+Lepilemur_spp                 200010010100002?01211000000?0?00
+Indriidae                     00-01200201001200121101000120020
+Cheirogaleidae                00000100000010200020200021100?00
+;
+END;
+

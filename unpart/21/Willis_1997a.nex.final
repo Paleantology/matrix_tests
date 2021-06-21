@@ -1,0 +1,22 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=10 NCHAR=15;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Brachyuranochampsa  100000000000000
+Crocodylus          000000000000000
+Mekosuchus          121111211?10110
+Trilophosuchus      01?11?211?10210
+Quinkana            1210?1211111?0?
+Baru                1211?1111101001
+Kambara             111111000000000
+Australosuchus      111110000000000
+Pallimnarchus       111110000000001
+Harpacochampsa      ?111000?0000000
+;
+END;
+

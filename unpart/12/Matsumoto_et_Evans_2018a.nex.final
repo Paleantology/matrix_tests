@@ -1,0 +1,27 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=15 NCHAR=34 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Hypothetical_ancestor      000000000000000000000000000000000?
+Anoualerpeton_priscus      0?0???0?0000000001100011000?000?0?
+Anoualerpeton_unicus       010000000000?00??11000000000000???
+Celtedens_ibericus         000???0?000????0000?000001?0100000
+Albanerpeton_arthridion    00000000000000?0000011001111000???
+Albanerpeton_gracilis      0000000011100000000111000111000???
+Albanerpeton_galaktion     000000001210010?000011010111000???
+Albanerpeton_cifellii      00020000111000???????????11?0?????
+Albanerpeton_nexuosus      1111010111010010011011110111000???
+Albanerpeton_inexpectatum  11111-1211000011100112120111010110
+Albanerpeton_pannonicus    1111000011000010000112121111011??0
+Paskapoo_species           11111-101100101000011?101111010???
+Wesserpeton_evansae        0(01)010000(01)(01)00?0(01)0000(01)100011(01)101010?
+Una_albanerpetontid        000?000?000?????????100001?00?0???
+Shirerpeton_isaji          ??????????????00?1101(01)111??10?1011
+;
+END;
+

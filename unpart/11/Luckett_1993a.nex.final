@@ -1,0 +1,22 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=10 NCHAR=17 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+Eutherian_morphotype  00000000000000000
+Lagomorpha            00012000000011122
+Rodentia              00012000000011122
+Scandentia            00001100000200010
+Microchiroptera       00021111111200000
+Megachiroptera        00021211111200000
+Dermoptera            00122210002100001
+Strepsirhini          11000000000000000
+Tarsiidae             11132100000000000
+Anthropoidea          11132210002000000
+;
+END;
+

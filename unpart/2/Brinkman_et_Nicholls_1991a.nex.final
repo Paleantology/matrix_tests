@@ -1,0 +1,17 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=4 NCHAR=20;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+
+MATRIX
+
+Plesiobaena   00011000000000000000
+Boremys       1(12)100010001111111100
+Stygiochelys  12100121110000000000
+Eubaena       12100120001111100011
+;
+END;
+

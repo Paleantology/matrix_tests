@@ -1,0 +1,38 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=25 NCHAR=18;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+
+MATRIX
+
+Squalodon                000000000000000000
+Xhosacetus               20002101010001002?
+Pterocetus               20002201010011002?
+Khoikhoicetus            20002?01000031002?
+Indopacetus              ?00022012200210022
+Africanacetus            20003201210032002?
+Ihlengesi                2000320120003200??
+Mesoplodon_bidens        200032012110310023
+Mesoplodon_slangkopi     21003201201032002?
+Mesoplodon_grayi         210032012110320023
+Mesoplodon_layardi       211032012210320023
+Mesoplodon_densirostris  210032012210320023
+Mesoplodon_mirus         200032012210320022
+Hyperoodon               202032022210330022
+Ziphius                  102130021001001022
+Izikoziphius_rossi       10113012100100102?
+Izikoziphius_angustus    10113012100100102?
+Nenga                    00002001000001002?
+Tasmacetus               000022010000100020
+Microberardius           ?00010010000?0011?
+Berardius                000010010100000111
+Archaeoziphius           0?000001010(01)0(01)011?
+Nazcacetus               0000210?0?00100022
+Choneziphius             00112(01)011100?01???
+Ziphirostrum             00002101110010102?
+;
+END;
+

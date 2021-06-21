@@ -1,0 +1,22 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=22;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+
+MATRIX
+
+ancestor                    0000000000000000000000
+Barbourofelis_piveteaui     1121122221111121121112
+Sansanosmilus_palmidens     0010011110001011000001
+Albanosmilus_jourdani       ????021?1?????11111112
+Barbourofelis_vallesiensis  ????1222?0??1121111112
+Barbourofelis_morrisi       1121?22221101121121?12
+Barbourofelis_loveorum      11?11222110?1121?21112
+Barbourofelis_fricki        112122???211212??21?12
+Prosanosmilus_peregrinus    ?????0000??00000000000
+;
+END;
+
