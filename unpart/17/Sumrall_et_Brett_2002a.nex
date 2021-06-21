@@ -1,0 +1,38 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=19;
+	FORMAT SYMBOLS= " 0 1 2 3 4 5" MISSING=? GAP=- ;
+
+MATRIX
+
+Echinoencrinites  1000??040000000?00?
+Proctocystis      1110??030000?00?00?
+Scoliocystis      0000??011110010?00?
+Jaekelocystis     0111112411121001110
+Lepadocystis      0001000411101100000
+Anartiocystis     0011101411101000000
+Novacystis        0011000211121111001
+Apiocystites      0111112311121000110
+Callocystites     0111102311121100110
+Brockocystis      001100141112000?00?
+Pseudocrinites    0111110511111101001
+;
+END;
+
+BEGIN ASSUMPTIONS;
+ 	USERTYPE 'step_A' (STEPMATRIX) = 6
+	0 1 2 3 4 5
+	. 1 2 3 2 3
+	1 . 3 2 1 2
+	2 3 . 3 2 1
+	3 2 3 . 1 2
+	2 1 2 1 . 1
+	3 2 1 2 1 .
+	;
+ 	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-7 9-19, step_A: 8; 
+END;
+

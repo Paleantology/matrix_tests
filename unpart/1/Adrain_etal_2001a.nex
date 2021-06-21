@@ -1,0 +1,34 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=18 NCHAR=25;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+
+smithiae                     0000000000000000000000000
+Ischyrotoma_anataphra        3123001102011011000100000
+Dimeropygiella_blanda        1122110001001100000110110
+Dimeropygiella_cf_blanda     112211000?00?????00110110
+Ischyrotoma_borealis         220100111?0010111????????
+Dimeropygiella_caudanodosa   1111012001101000100101010
+Dimeropygiella_fillmorensis  1111012001101100200101210
+Ischyrotoma_juabensis        220100111?001001211100000
+Dimeropygiella_mccormicki    1122010001000000100110110
+Pseudohystricus_obesus       0111002000?0?????00010100
+Pseudohystricus_orbus        11110010000000000????????
+Dimeropygiella_ovata         1111012001101100100101210
+Ischyrotoma_parallela        312300?1020110?11????????
+stubblefieldi                2201002112011011010100001
+Ischyrotoma_twenhofeli       2201002112011011111100001
+Ischyrotoma_wahwahensis      2201001112001000210100001
+Dimeropygiella_sp            020100100000?????????????
+T_sp                         220100??1?001000211100000
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-9 11-25, ord: 10;
+END;

@@ -1,0 +1,22 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=6 NCHAR=22;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Scutellosaurus    ?0000000000??000?00000
+Scelidosaurus     00000000000??000000000
+Ankylosauria      00000000000??000000000
+Huayangosaurus    1111111111111111111000
+Dacentrus         ??1111?1?111112??1?11?
+Other_stegosaurs  1111111111111121111111
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-14 16-22, ord: 15;
+END;

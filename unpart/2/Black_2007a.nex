@@ -1,0 +1,28 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=12;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+
+MATRIX
+
+Madakoala        0100000011??
+Trichosurus      011000000000
+Marada           101210010011
+Wakaleo          010?12010010
+Kuterintja       1102100211??
+Warendja         101111020120
+Muramura         11111111(01)110
+Namilamadeta     111111110110
+Propalorchestes  102211121111
+Raemeotherium    1?22011201?0
+Ngapakaldia      102212121111
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;
+

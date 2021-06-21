@@ -1,0 +1,34 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=18 NCHAR=12 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3 4 5 6" MISSING=? GAP=- ;
+MATRIX
+
+Outgroup           24540200100?
+Cercopithecus      200403111000
+Colobus            306203010001
+Hylobates          145500101011
+Macaca             130101111000
+Miopithecus        000402110001
+Nasalis            013202111000
+Pan                434610101110
+Pongo              420610101110
+Presbytis          023203010001
+Afropithecus       32560110?010
+Proconsul_nyanzae  12?601101010
+Turkanapithecus    1?56?11?0010
+Dendropithecus     1??6011010??
+Micropithecus      ????01001??1
+Rangwapithecus     22?60110????
+Kalepithecus       3??????0?0??
+Simiolus           3???01??????
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+ END;
+

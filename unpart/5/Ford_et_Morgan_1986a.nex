@@ -1,0 +1,36 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=20 NCHAR=11 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3 4" MISSING=? GAP=- ;
+MATRIX
+
+Ancestor        10100000102
+UF_40097        14000040202
+Cebus           10400000322
+Saimiri         04200030122
+Callicebus      14100030102
+Aotus           13100030001
+Ceboid_H        14200020202
+Callimico       14100040202
+Saguinus        14100040302
+Leontopithecus  14100040212
+Callithrix      04100140301
+Cebuella        14100140300
+Ceboid_C        0400000020?
+Pithecia        01200120302
+Chiropotes      01401000322
+Cacajao         13100010322
+Alouatta        22400010222
+Lagothrix       11301000322
+Ateles          11400000322
+Brachyteles     14401000422
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;
+

@@ -1,0 +1,36 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=18 NCHAR=40;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+
+MATRIX
+
+Palaeosyops_robustus                  0010000000(01)0000000000000000000000000000?
+Telmatherium_validus                  0001010100110100000000000000000001100000
+Epimanteoceras_formosus               100101110001021000000000010?00000???????
+Dolichorhinoides_angustidens          1??101?100010100000000?0110100?????????0
+Protitian_minor                       ?10?0210110201??00100000000100000??????0
+Protitian_grangeri                    1102021010020111101000000001000001100000
+Rhinotitan_kaiseni                    10210120101201000000101?1111000001010010
+Rhinotitan_mongoliensis               102101202(01)12010(01)100010110(01)(01)1000001010010
+Akautitian_hippopotamopus             1?22?2(12)?2112110000000?110011110001110011
+Metatitan_relictus                    2122012021021100001001111111101112210021
+Metatitan_primus                      2?22012121021100001001?11111101?12210121
+Metatitan_progressus                  ????????211121?0?0???0?????11??????????2
+Embolotherium_grangeri                202212200210020001012021111111000231112?
+Embolotherium_andrewsi                202212203112?????101?02111111102022?1122
+Parabrontops_gobiensis                10210220011201111001002111111(01)021??????0
+Gnathotitan_berkeyi                   ??????????0????????????0000101000110001?
+Microtitan_mongoliensis               ???????????????????????00000010??1??000?
+Brachydoastematherium_transylvanicum  ??????????????????????????????10???1?02?
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 35, ord: 1-34 36-40;
+END;
+

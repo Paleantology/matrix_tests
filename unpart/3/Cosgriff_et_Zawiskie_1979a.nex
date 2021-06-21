@@ -1,0 +1,52 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=12 NCHAR=17;
+	FORMAT SYMBOLS= " 1 2 3 4 5 6" MISSING=? GAP=- ;
+
+MATRIX
+
+Ancestor                    11111111111111111
+Deltasaurus_kimberleyensis  31332131323122222
+Deltasaurus_pustulatus      22322251323122??2
+Peltostega_erici            2122114?421112132
+Peltostega_wimani           2122114?42?112??2
+Mahavisaurus_dentatus       2234121121121??21
+Mahavisaurus_australis      1233221111121???1
+Pneumatostega_potamia       31122132422111132
+Rewana_quadricuneata        23??3?12?11??1121
+Indobrachyops_panchetensis  32342211311211131
+Rhytidosteus_capensis       11212163221112212
+Derwentia_warreni           33343121311112132
+;
+END;
+
+BEGIN ASSUMPTIONS;
+ 	USERTYPE 'step_A' (STEPMATRIX) = 6
+	1 2 3 4 5 6
+	. 1 1 2 3 3
+	1 . 2 3 4 4
+	1 2 . 1 2 2
+	2 3 1 . 1 1
+	3 4 2 1 . 2
+	3 4 2 1 2 .
+	;
+	USERTYPE 'step_B' (STEPMATRIX) = 3
+	1 2 3
+	. 1 1
+	1 . 2
+	1 2 .
+	;
+	USERTYPE 'step_C' (STEPMATRIX) = 4
+	1 2 3 4
+	. 1 1 2
+	1 . 2 3
+	1 2 . 1
+	2 3 1 .
+	;
+ 	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = step_C: 9, step_B: 8 10-11, step_A: 7, ord: 1-6 12-17; 
+END;
+

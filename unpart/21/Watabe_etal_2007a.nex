@@ -1,0 +1,34 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=17 NCHAR=11;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+
+MATRIX
+
+Oligokyphus                     00000000000
+Tritylodon                      00000111000
+Lufengia                        11200111000
+Bienotherium                    11100111010
+Kayentatherium                  11200111010
+Dianzongia                      11200111001
+Yunnanodon                      11???111002
+Dinnebitodon                    11211111002
+Bienotheroides_wansienensis     11211011110
+Bienotheroides_zigongensis      1???1111110
+Bienotheroides_ultimus          ?????111110
+Bienotheroides_shartegensis     11211111110
+Bocatherium                     11211111220
+Polistodon                      11???111220
+Stereognathus                   11211111220
+Xenocretosuchus                 ?????111220
+Unnamed_Japanese_tritylodontid  ?????111220
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;
+

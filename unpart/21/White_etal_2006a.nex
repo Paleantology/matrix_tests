@@ -1,0 +1,23 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=6 NCHAR=13;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+
+MATRIX
+
+ape                                 0000000000(012)0(012)
+Late_Miocene_hominids               (01)??(01)110?00000
+Ardipithecus_ramidus                1111110000000
+Assa_Issie_Aramis_Hana_Hari_series  2?????1??1111
+Australopithecus_anamensis          22121?11(01)1111
+Australopithecus_afarensis          32131122112(12)1
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;
+

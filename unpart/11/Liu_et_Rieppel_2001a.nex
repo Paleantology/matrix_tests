@@ -1,0 +1,25 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=10 NCHAR=18;
+	FORMAT SYMBOLS= " 0 1 2" MISSING=? GAP=- ;
+MATRIX
+
+Ancestor         000000000000000000
+Askeptosaurus    200001011000110100
+Thalattosaurus   211110111121101010
+Anshunsaurus     20???1001211211100
+Clarazia         1110101?1121201000
+Hescheleria      11101??????12????0
+Xinpusaurus      1100(01)0010111211?11
+Nectosaurus      ????00?111?12???11
+Paralonectes     11111????????????1
+Agkistrognathus  ??100?????????????
+;
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=ord PolyTcount=MINSTEPS ;
+END;
