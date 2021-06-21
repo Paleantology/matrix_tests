@@ -1,4 +1,3 @@
-partitions = readDataDelimitedFile("parts.tsv", delimiter = ",")
 print("Processing partitioned Script")
 
 br_len_lambda ~ dnExp(0.2)
@@ -25,33 +24,19 @@ tree_length := phylogeny.treeLength()
 # In the below, what we do is make a vector of data partitions in which we have excluded the other partitions.
 # This is tricky because you'll need to find some way to get in the number of partitions and which characters
 # need to be excluded from which
-x = 1
-for (x in 1:partitions.size()){
-  morpho_part[x] <- morpho
-  morpho_part[x].excludeCharacter(partitions[x])
-}
+lambda = 1
+mu = 1
+Q_o <- fnOrderedRateMatrix(maxState, lambda, mu) #max_state is the largest character state
+morpho_part[1] <- morpho
+morpho_part[1].excludeCharacter()
+m_morph[2] ~ dnPhyloCTMC(tree=phylogeny, siteRates=rates_morpho,
+                              Q=Q_o, type="Standard")
+m_morph[2].clamp(morpho_part[2])
 
-n_max_states <- 10
-i=1
-idx = 1
-for (y in 1:morpho_part.size()){
-  morpho_bystate[y] <- morpho_part[y]
-  for (i in 2:n_max_states) {
-    morpho_bystate[y].setNumStatesPartition(i)                 # only keep character blocks with state space equal to size i
 
-    nc = morpho_bystate[y].nchar()
-    nc                         # get number of characters per character size with i-sized states
-    if (nc > 0) {
-    morpho_bystate[y]
-    Q[idx] <- fnJC(i)
-
-      m_morph[idx] ~ dnPhyloCTMC(tree=phylogeny, siteRates=rates_morpho,
-                              Q=Q[idx], type="Standard")
-      m_morph[idx].clamp(morpho_bystate[y])
-      idx = idx + 1
-                                   # increment counter
-      }
-      i = i + 1
-    }
-      y = y+1
-}
+Q <- fnJC(i) #largest character state
+morpho_part[2] <- morpho
+morpho_part[2].excludeCharacter()
+m_morph[2] ~ dnPhyloCTMC(tree=phylogeny, siteRates=rates_morpho,
+                              Q=Q, type="Standard")
+m_morph[2].clamp(morpho_part[2])
