@@ -25,7 +25,7 @@ n_taxa <- taxa.size()
 n_branches <- 2 * n_taxa - 3
 print("Loading Partitioned Analysis")
 # Load the model files
-source("../../Scripts/Mk_parted.Rev") # Morphological character change model
+source("../../Scripts/Mk_parted.Rev") # Morphological character change model. Change this name to your Mk model file.
 
 ########
 # MCMC #
@@ -35,9 +35,9 @@ source("../../Scripts/Mk_parted.Rev") # Morphological character change model
 mymodel = model(phylogeny)
 # Create a vector of monitors #
 # 1. for the full model #
-monitors.append(mnModel(filename="output/parted.log", printgen=10))
+monitors.append(mnModel(filename="output/parted.log", printgen=10)) #Change to author names
 # 2. the tree #
-monitors.append(mnFile(filename="output/parted.trees", printgen=10, phylogeny))
+monitors.append(mnFile(filename="output/parted.trees", printgen=10, phylogeny)) #Change to author names
 # 3. and a few select parameters to be printed to the screen #
 monitors.append(mnScreen(printgen=100))
 

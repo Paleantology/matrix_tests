@@ -19,24 +19,49 @@ moves.append(mvSPR(phylogeny, weight=n_branches/10.0))
 moves.append(mvBranchLengthScale(phylogeny, weight=n_branches))
 tree_length := phylogeny.treeLength()
 
-# First, we establish our partitionfinder partitions
 
-# In the below, what we do is make a vector of data partitions in which we have excluded the other partitions.
-# This is tricky because you'll need to find some way to get in the number of partitions and which characters
-# need to be excluded from which
-lambda = 1
-mu = 1
-Q_o <- fnOrderedRateMatrix(maxState, lambda, mu) #max_state is the largest character state
-morpho_part[1] <- morpho
-morpho_part[1].excludeCharacter()
-m_morph[2] ~ dnPhyloCTMC(tree=phylogeny, siteRates=rates_morpho,
-                              Q=Q_o, type="Standard")
-m_morph[2].clamp(morpho_part[2])
+morpho_u <- morpho
+morpho_u.excludeCharacter(v())
+
+n_max_states <- 2
+idx = 1
+morpho_bystate <- morpho_u.setNumStatesVector()
+for (i in 1:n_max_states) {
+    nc = morpho_f_bystate[i].nchar()
+    # for non-empty character blocks
+    if (nc > 0) {
+        # make i-by-i rate matrix
+        q[idx] <- fnJC(i)
+# create model of evolution for the character block
+        m_morph[idx] ~ dnPhyloCTMC( tree=phylogeny,
+                                    Q=q[idx],
+                                    nSites=nc,
+                                    siteRates=rates_morpho,
+                                    type="Standard")
+
+        # attach the data
+	    m_morph[idx].clamp(morpho_f_bystate[i])
+
+        # increment counter
+        idx = idx + 1
+
+}
+}
 
 
-Q <- fnJC(i) #largest character state
-morpho_part[2] <- morpho
-morpho_part[2].excludeCharacter()
-m_morph[2] ~ dnPhyloCTMC(tree=phylogeny, siteRates=rates_morpho,
-                              Q=Q, type="Standard")
-m_morph[2].clamp(morpho_part[2])
+morpho_s <- morpho
+morpho_s.excludeCharacter(v())
+
+
+diag_rates := [ [  0.0, lambda,    0.0,    0.0],
+                [   mu,    0.0, lambda,    0.0],
+                [  0.0,     mu,    0.0, lambda],
+                [  0.0,    0.0,     mu,    0.0] ]
+
+Q_s := fnFreeK(diag_rates)
+s_morph ~ dnPhyloCTMC( tree=phylogeny,
+                            Q=Q_s,
+                            nSites=nc,
+                            siteRates=rates_morpho,
+                            type="Standard")
+s_morph.clamp(morpho_s)
