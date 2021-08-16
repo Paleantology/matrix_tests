@@ -1,0 +1,92 @@
+print("Processing partitioned Script")
+
+br_len_lambda ~ dnExp(0.2)
+moves.append(mvScale(br_len_lambda, weight=2))
+
+# Set up Gamma-distributed rate variation.
+alpha_morpho ~ dnUniform( 0.0, 1E6 )
+rates_morpho := fnDiscretizeGamma( alpha_morpho, alpha_morpho, 4 )
+
+# Moves on the parameters to the Gamma distribution.
+moves.append( mvScale(alpha_morpho, lambda=1, weight=2.0) )
+
+
+## Tree definition
+
+phylogeny ~ dnUniformTopologyBranchLength(taxa, branchLengthDistribution=dnExponential(br_len_lambda))
+moves.append(mvNNI(phylogeny, weight=n_branches/2.0))
+moves.append(mvSPR(phylogeny, weight=n_branches/10.0))
+moves.append(mvBranchLengthScale(phylogeny, weight=n_branches))
+tree_length := phylogeny.treeLength()
+
+
+morpho_s1 <- morpho
+morpho_s1.excludeCharacter(v(1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17))
+
+#step_A
+r1=1
+r2=2
+r3=3
+r4=4
+diag_rates := [[ 0.0, r1, r1, r2, r3, r3],
+		[r1, 0.0, r2, r3, r4, r4],
+		[r1, r2, 0.0, r1, r2, r2],
+		[r2, r3, r1, 0.0, r1, r1],
+		[r3, r4, r2, r1, 0.0, r2],
+		[r3, r4, r2, r1, r2, 0.0]]
+
+Q_s1 := fnFreeK(diag_rates)
+s1_morph ~ dnPhyloCTMC( tree=phylogeny,
+                            Q=Q_s1,
+                            siteRates=rates_morpho,
+                            type="Standard")
+s1_morph.clamp(morpho_s1)
+
+
+#Step_B
+morpho_s2 <- morpho
+morpho_s2.excludeCharacter(v(1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 15, 16, 17))
+
+r1=1
+r2=2
+diag_rates := [[0.0, r1, r1],
+		[r1, 0.0, r2],
+		[r1, r2, 0.0]]
+
+Q_s2 := fnFreeK(diag_rates)
+s2_morph ~ dnPhyloCTMC( tree=phylogeny,
+                            Q=Q_s2,
+                            siteRates=rates_morpho,
+                            type="Standard")
+s2_morph.clamp(morpho_s2)
+
+#STEP_C
+morpho_s3 <- morpho
+morpho_s3.excludeCharacter(v(1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17))
+
+r1=1
+r2=2
+r3=3
+diag_rates := [[0.0, r1, r1, r2],
+		[r1, 0.0, r2, r3],
+		[r1, r2, 0.0, r1],
+		[r2, r3, r1, 0.0]]
+
+Q_s3 := fnFreeK(diag_rates)
+s3_morph ~ dnPhyloCTMC( tree=phylogeny,
+                            Q=Q_s3,
+                            siteRates=rates_morpho,
+                            type="Standard")
+s3_morph.clamp(morpho_s3)
+
+morpho_o <- morpho
+morpho_o.excludeCharacter(v(7, 8, 9, 10, 11))
+lambda = 1
+mu = 1
+maxState = 5
+Q_o <- fnOrderedRateMatrix(maxState, lambda, mu)
+s_morph ~ dnPhyloCTMC( tree=phylogeny,
+                            Q=Q_o,
+                            siteRates=rates_morpho,
+                            type="Standard")
+s_morph.clamp(morpho_o)
